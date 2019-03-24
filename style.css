@@ -1,0 +1,889 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+Theme Name: Nicolai
+Author: Alexandra Dima
+Description: HTML template converted to WordPress
+Version: 0.0.1
+*/
+
+
+*{
+	box-sizing: border-box;
+	
+}
+
+
+
+body{
+	font-family: "Robotolight","Helvetica Neue", "sans-serif";
+	text-rendering: optimizeLegibility !important;
+         background-image: url('images/momgirl.png');
+       
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+@font-face{
+		font-family: "Robotoregular";
+	    src:url(fonts/robotocondensed-regular-webfont.woff);
+	    
+	}
+
+@font-face {
+    font-family: "Robotolight";
+    src: url(fonts/robotocondensed-light-webfont.woff);
+
+}
+
+@font-face {
+    font-family: "Robotothin";
+    src: url(fonts/roboto-thin-webfont.woff);
+
+}
+
+@font-face {
+    font-family: "Robotoblack";
+    src: url(fonts/roboto-black-webfont.woff);
+
+}
+
+
+
+li{
+	list-style: none;
+	
+
+}
+
+h1,h2,h4{
+	font-family:"Robotothin", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 30px;
+	
+}
+
+p{
+	font-size: 16px;
+	line-height: 21px;
+	color: black;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+
+
+/*************** header animation ************************************************** */
+.main{
+	background: url(images/backgroundimg.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	width: 100%;
+	height: 350px;
+	animation: fade-slide-down 2s ease-out forwards;
+	
+}
+.buttonstyle{
+	color: #1D4D60;
+	text-align: center;
+	background-color: #FFCC00;
+	border-radius: 10px;
+	font-family: "RobotoLight";
+	font-size: 18px;
+	border: none;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2),
+		        0 6px 20px rgba(0,0,0,0.19);
+    animation-delay: 1.2s;
+}
+.logo img{
+		border-radius: 10px;
+	}
+
+@media only screen and (min-width: 50em) {
+	/*************** banner animation ************* */
+	.main{
+	background: url(images/backgrounddesk.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 940px;
+	width: 100%;
+	animation: fade-slide-down 2s ease-out forwards;
+		
+	}
+	
+	
+	
+		/*************** title animation ************* */
+	.animate-pop-in {
+  animation: pop-in .6s ease-out forwards;
+  opacity: 0;
+}
+	
+	.important img{
+		height: 680px;
+		width: 100%;
+        animation-delay: .6s;
+	}
+	#discover{
+	text-align: center;
+	color: white;
+	font-family: "RobotoBlack";
+	line-height: normal;
+	font-size: 40px;
+    animation-delay:.9s;
+}
+	.buttonstyle{
+	color: #1D4D60;
+	text-align: center;
+	background-color: #FFCC00;
+	border-radius: 10px;
+	font-family: "RobotoLight";
+	font-size: 18px;
+	border: none;
+        width: 120px;
+        height: 40px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2),
+		        0 6px 20px rgba(0,0,0,0.19);
+    animation-delay: 1.2s;
+}
+
+
+	
+		/*************** styling elements ************* */
+	
+	.intro{
+	text-align: center;
+	position: relative;
+	left: 100px;
+	top: 80px;
+	
+}
+	.text{
+		text-align: center;
+	}
+
+
+	.logo img{
+		height: 50px;
+		
+	}
+  
+	
+	.intro p{
+		margin-left: 0;
+		padding-left: 0;
+		margin-top: 20px;
+	font-size: 40px;
+		
+		
+}
+	
+
+}
+	/* Animations */
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-4rem);
+            transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-4rem) scale(.8);
+            transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+
+
+	
+/*************** Navigation desktop ************************************************** */
+.navbar{
+	padding: 0;
+	margin: 0;
+}
+.menu li{
+	display: block;
+	text-align: right;
+	
+}
+
+.menu-item a{
+	text-decoration: none;
+	color:#1D4D60;
+	font-family:"Robotoregular", Helvetica, Arial, "sans-serif";
+	font-size: 18px;
+	margin: 10px;
+	margin-top: 10px;
+
+}
+
+
+.menu-item a:hover{
+	opacity: 1;
+	background-color:#9C9BF8 !important;
+	color: #FFCC00;
+	padding: 0.8px;
+}
+
+@media only screen and (min-width: 50em){
+	.menu li{
+	display: inline-block;
+}
+	.menu-item a{
+	text-decoration: none;
+	color: white;
+	font-family:"Robotoregular", Helvetica, Arial, "sans-serif";
+	font-size: 18px;
+	text-align: right;
+	margin-right: 30px;
+		margin-top: 10px;
+}
+}
+
+
+
+
+/*************** ABOUT ******************* */
+.about{
+	position: relative;
+	bottom: 80px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.textabout{
+	margin: 0 auto;
+}
+
+.textabout p{
+	text-align: justify;
+	font-size: 18px;
+	font-family: "Robotolight";
+}
+
+.titleabout li{
+	display: inline;
+	font-family: "RobotoBlack";
+	font-size: 25px;
+}
+
+.card{
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2),
+		        0 6px 20px rgba(0,0,0,0.19);
+}
+.card-text{
+	font-size: 16px;
+	font-family: "RobotoBlack";
+	color: #7B7AF5;
+} 
+
+@media only screen and (min-width: 50em) {
+	.about{
+	position: relative;
+	bottom: 180px;
+	text-align: center;
+	margin: 0 auto;
+}
+.card{
+	margin-bottom: 0;
+	
+}
+	.titleabout li{
+	font-size: 40px;
+}
+	
+}
+/*************** ACTIVITIES******************* */
+
+
+.presentation{
+	position: relative;
+	bottom: 50px;
+}
+.activities h4{
+	font-size: 20px;
+	font-family: "Robotothin";
+	text-align: center;
+}
+
+.activbk {
+	background: url(images/mobileactiv.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	
+}
+
+.activities img{
+    height: 300px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2),
+		        0 6px 20px rgba(0,0,0,0.19);
+
+}
+
+.titleplay h4{
+	font-family: "RobotoBlack";
+	font-size: 25px;
+	color: #1D4D60;
+	margin: 20px;
+}
+.subtitleplay{
+	font-family: "Robotoregular";
+	font-size: 16px;
+	margin: 10px;
+		
+}
+
+
+@media only screen and (min-width: 50em){
+	.activbk {
+	background: url(images/activbk.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	height: 900px;
+        background-size: cover;
+}
+	
+	.activities img{
+	height: 420px;
+
+}
+
+	.titleplay h4{
+	font-family: "RobotoBlack";
+	font-size: 40px;
+		
+}
+.subtitleplay{
+	font-family: "Robotoregular";
+	font-size: 20px;
+		margin: 30px;
+}
+	
+}
+
+/*************** Workshops******************* */
+
+.workshops{
+	margin: 0 auto;
+}
+.worktext{
+	text-align: center;
+	
+}
+.worktext h4{
+	font-family: "RobotoBlack";
+	font-size: 20px;
+	color: #1D4D60;
+}
+.worktext p{
+	font-family: "RobotoLight";
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.workpicture{
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+}
+.workpicture img{
+	height: 300px;
+	width: 300px;
+	
+	
+	
+}
+
+@media only screen and (min-width: 50em){
+	.workshops{
+	margin-top: 300px;
+}
+	.worktext h4{
+	font-size: 35px;
+}
+.worktext p{
+	font-family: "RobotoLight";
+	font-size: 20px;
+	line-height: normal;
+        text-align: left;
+	
+}
+
+.worktext{
+	text-align: center;
+	padding: 40px 20px 0 60px;
+	margin: 0 auto;;
+	
+}
+.workpicture img{
+	text-align: center;
+	height: 500px;
+	width: 500px;
+	position: relative;
+	bottom: 150px;
+}
+}
+
+/*************** ROOMS******************* */
+
+.rooms{
+	background: url(images/roomsbkmob.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	height: 1200px;
+	margin-top: 50px;
+        background-size: cover;
+	
+}
+
+.showcaserooms img{
+		height: 300px;
+		width: 300px;
+	}
+
+.room1{
+		position: relative;
+		bottom: 80px;
+	}
+	.infogroten{
+		position: relative;
+		bottom: 60px;
+	}
+	
+	.inforoom2{
+		position: relative;
+		bottom: 20px;
+	}
+.room2{
+		position: relative;
+		bottom: 150px;
+	}
+.room3{
+		position: relative;
+		bottom: 50px;
+	}
+.inforoom3{
+		position: relative;
+		bottom: 50px;
+	}
+
+@media only screen and (min-width: 50em){
+.rooms{
+	background: url(images/roomsbk.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	height: 1450px;
+	position: relative;
+	bottom: 100px;
+        background-size: cover;
+	
+}
+	.showcaserooms{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.showcaserooms img{
+		height: 520px;
+		width: 520px;
+	}
+	
+	.room1{
+		position: relative;
+		top: 300px;
+	}
+	
+	.infogroten{
+		position: relative;
+		bottom: 80px;
+	}
+	.inforoom2{
+		position: relative;
+		bottom: 60px;
+	}
+	
+	.room2{
+		position: relative;
+		top: 60px;
+	}
+.room3{
+		position: relative;
+		bottom: 100px;
+	}
+.inforoom3{
+		position: relative;
+		bottom: 90px;
+	}
+}
+
+
+
+
+/*************** Prices******************* */
+.titleprices h4{
+	font-family: "RobotoBlack";
+	color: #1D4D60;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 170px;
+}
+@media only screen and  (min-width: 50em){
+   .titleprices h4{
+	
+	padding-top: 40px;
+} 
+}
+.card-title li{
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+	font-family: "RobotoLight";
+	font-size: 16px;
+}
+
+.card-title{
+	padding: 0;
+	text-align: center;
+}
+.card-header{
+	text-align: center;
+	background-color: #7B7AF5;
+	color: white;
+	font-family: "RobotoBlack";
+	font-size: 16px;
+}
+
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	color: #245365;
+	background-color: #FFCC00;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2),
+		        0 6px 20px rgba(0,0,0,0.19);
+	border: none;
+	border-radius: 10px;
+	font-family: "RobotoLight";
+}
+
+.nav-item.nav-link{
+	color:black;
+	font-size: 18px;
+	font-family: "Robotolight";
+	margin: 10px;
+} 
+.nav-tabs {
+    border-bottom: none;
+}
+
+
+@media only screen and (min-width: 50em){
+	.titleprices h4{
+	font-family: "RobotoBlack";
+	font-size: 35px;
+		margin: 0;
+}
+div#nav-tabContent {
+    margin: 0 auto;
+}
+
+}
+
+/*************** gallery*******************/
+.titlegallery h4{
+	text-align: center;
+	font-family: "RobotoBlack";
+	font-size: 25px;
+	color: #1D4D60;
+	margin: 20px;
+}
+.gallery img{
+height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.gallery{
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 50em){
+	.gallery img{
+height: 350px;
+	width: 350px;
+	margin: 0 auto;
+	padding: 10px;
+}
+	.gallery{
+		position: relative;
+		top: 150px;
+	}
+	.titlegallery h4{
+	position: relative;
+		top: 100px;
+	font-size: 35px;
+	
+}
+}
+
+/*************** FORM*******************/
+
+.contact{
+	background:url(images/contactmob.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	height: 430px;
+        background-size: cover;
+	
+}
+
+.contactus{
+	position: relative;
+	bottom: 80px;
+}
+@media only screen and (min-width: 50em){
+	.children img{
+	position: relative;
+	top: 400px;
+}
+
+        .invitation{
+        position: relative;
+	top: 400px;
+        }
+	.contact{
+	background:url(images/contactbk.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	height: 1000px;
+	background-size: cover;
+}
+
+}
+
+
+
+/*************** FOOTER*******************/
+ .footer{
+	background:url(images/footermob.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	height: 800px;
+        background-size:   cover;  	
+}
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  background: #9C9BF8;
+  color: #ffffff;
+  border-radius: 5px;
+    font-size: 14px;
+    font-family: Robotoregular;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+}
+
+.infofooter{
+    position: relative;
+    top: 170px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px;
+}
+div.textwidget{
+    color: white;
+}
+.widget.widget_recent_entries ul{
+    padding-left: 0;
+    color: white;
+}
+.widget.widget_recent_entries li a{
+    font-family: "RobotoLight";
+    font-size: 18px;
+    color: white;
+}
+ul.follow {
+    padding-left: 0;
+    color: white;
+    font-family: "RobotoLight";
+    font-size: 18px;
+}
+i.fab{
+    color: white;
+}
+h3.widget-title{
+    color: white;
+    font-family: "Robotoregular";
+    font-size: 20px;
+}
+div.textwidget p{
+    color: white;
+    font-family: "RobotoLight";
+    font-size: 18px;
+}
+@media only screen and (min-width: 50em){
+    .footer{
+	background:url(images/footer2.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	height: 380px;
+         background-size: cover;      	
+}
+
+.infofooter{
+    position: relative;
+    top: 150px;
+    text-align: left;
+}
+
+
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+   
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/*************** blog animation ************************************************** */
+.blog{
+	background: url(images/backgroundimg.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	width: 100%;
+	height: 350px;
+	animation: fade-slide-down 2s ease-out forwards;
+	
+}
+
+@media only screen and (min-width: 50em) {
+	/*************** banner animation ************* */
+	.blog{
+	background: url(images/backgrounddesk.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 770px;
+	width: 100%;
+	animation: fade-slide-down 2s ease-out forwards;
+		
+	}
+       
+    .introblog{
+	text-align: center;
+	position: relative;
+	top: 80px;
+        color:#ffd322;
+	font-family: "RobotoBlack";
+	line-height: normal;
+	font-size: 100px;
+    animation-delay:.9s;
+	
+}
+}
+
+
+
+
+
+
+
+
+
+
+
